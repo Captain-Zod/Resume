@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Resist Sans Display', sans-serif;
+}
+
+:root {
+    --text-color: #666;
+  }
+
+.page{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+ 
+p, li{
+    color: var(--text-color);
+}
+ 
+.raw{
+    padding: 15px 30px;
+}
+
+.raw p{
+    margin: 5px auto;
+}
+ 
+/* INFO */
+.title{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.title-mini{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.name::after{
+    content: ", ";
+    font-size: 24px;
+}
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+ 
+.contacts img{
+    height: 15px;
+}
+ 
+.contacts a{
+    margin-left: 10px;
+}
+
+.link{
+    padding: 10px;
+}
+
+.flex-raw{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.flex-left, .flex-right{
+    padding: 0px 10px;
+}
+
+
+.flex-left{
+    width: 220px;
+}
+
+.flex-right{
+    width: 380px;
+}
