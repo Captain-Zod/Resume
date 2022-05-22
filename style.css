@@ -2,7 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Resist Sans Display', sans-serif;
+    font-family: Resist Sans Display, sans-serif;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Resist Sans Text'), url('https://fonts.cdnfonts.com/s/36458/Groteskly Yours  Resist Sans Text Regular Oblique.woff') format('woff');
 }
 
 :root {
@@ -36,6 +43,7 @@ p, li{
 .title-mini{
     font-weight: bold;
     font-size: 16px;
+    color: black;
 }
 
 .name::after{
@@ -43,12 +51,22 @@ p, li{
     font-size: 24px;
 }
 
+.link a:link{
+    color: var(--text-color);
+    text-decoration: none;
+}
 
 .main{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
+    gap: 20px;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
 }
  
 .contacts img{
@@ -60,7 +78,7 @@ p, li{
 }
 
 .link{
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .flex-raw{
@@ -70,15 +88,29 @@ p, li{
     justify-content: space-between;
 }
 
-.flex-left, .flex-right{
-    padding: 0px 10px;
-}
-
-
 .flex-left{
     width: 220px;
 }
 
 .flex-right{
     width: 380px;
+}
+
+.lang-points{
+    margin-left: 50px;
+}
+
+.point{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.has-point{
+    background-color: #55f;
+}
+.no-point{
+    background-color: var(--text-color);
 }
