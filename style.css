@@ -14,12 +14,17 @@ body{
 
 :root {
     --text-color: #666;
+    --border: #ddd;
   }
 
-.page{
+.container{
     max-width: 700px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto;
+}
+
+.page{
+    margin: 0 15px;
+    border: 1px solid var(--border);
 }
  
 p, li{
@@ -27,7 +32,9 @@ p, li{
 }
  
 .raw{
-    padding: 15px 30px;
+    padding: 15px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #fff 0%, var(--border) 10%, var(--border) 90%, #fff 100%) 1 / 1 / 0;
 }
 
 .raw p{
