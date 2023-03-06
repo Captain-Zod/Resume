@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Resist Sans Display, sans-serif;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Resist Sans Text'), url('https://fonts.cdnfonts.com/s/36458/Groteskly Yours  Resist Sans Text Regular Oblique.woff') format('woff');
+}
+
+:root {
+    --text-color: #666;
+    --border: #ddd;
+  }
+
+.container{
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.page{
+    margin: 0 15px;
+    border: 1px solid var(--border);
+}
+ 
+p, li{
+    color: var(--text-color);
+}
+ 
+.raw{
+    padding: 15px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #fff 0%, var(--border) 10%, var(--border) 90%, #fff 100%) 1 / 1 / 0;
+}
+
+.raw p{
+    margin: 5px auto;
+}
+ 
+/* INFO */
+.title{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.title-mini{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.name::after{
+    content: ", ";
+    font-size: 24px;
+}
+
+.link a:link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+}
+ 
+.contacts img{
+    height: 15px;
+}
+ 
+.contacts a{
+    margin-left: 10px;
+}
+
+.link{
+    padding: 5px 10px;
+}
+
+.flex-raw{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.flex-left{
+    width: 220px;
+}
+
+.flex-right{
+    width: 380px;
+}
+
+.lang-points{
+    margin-left: 50px;
+}
+
+.point{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.has-point{
+    background-color: #55f;
+}
+.no-point{
+    background-color: var(--text-color);
+}
